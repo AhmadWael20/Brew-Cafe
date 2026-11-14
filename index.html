@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brew House | Coffee Shop</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="CSS/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="CSS/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#home">
+                <i class="fa-solid fa-mug-hot"></i>
+                <span>Brew House</span>
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-label="Toggle navigation">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home"
+                            data-en="Home" data-ar="الرئيسية">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offers"
+                            data-en="Offers" data-ar="العروض">Offers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu"
+                            data-en="Menu" data-ar="المنيو">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"
+                            data-en="About" data-ar="عن الكافيه">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"
+                            data-en="Contact" data-ar="تواصل معنا">Contact</a>
+                    </li>
+
+                </ul>
+
+                <div class="nav-actions">
+
+                    <!-- Language Button -->
+                    <button class="icon-btn" id="languageToggle"
+                        aria-label="Change language">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>AR</span>
+                    </button>
+
+                    <!-- Theme Button -->
+                    <button class="icon-btn" id="themeToggle"
+                        aria-label="Change theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+
+                    <!-- Cart Button -->
+                    <button class="icon-btn cart-button" id="cartButton"
+                        aria-label="Shopping cart">
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <header class="hero-section" id="home">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 hero-content">
+
+                    <span class="hero-label"
+                        data-en="YOUR DAILY COFFEE EXPERIENCE"
+                        data-ar="تجربتك اليومية مع القهوة">
+                        YOUR DAILY COFFEE EXPERIENCE
+                    </span>
+
+                    <h1 data-en="A Perfect Cup For Every Moment"
+                        data-ar="كوب مثالي لكل لحظة">
+
+                        A Perfect Cup For Every Moment
+
+                    </h1>
+
+                    <p data-en="Discover the art of coffee with our freshly brewed drinks and delicious flavors."
+                        data-ar="اكتشف فن القهوة مع مشروباتنا الطازجة ونكهاتنا المميزة.">
+
+                        Discover the art of coffee with our freshly brewed
+                        drinks and delicious flavors.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#menu" class="btn main-btn"
+                            data-en="Explore Menu"
+                            data-ar="اكتشف المنيو">
+                            Explore Menu
+                        </a>
+
+                        <a href="#about" class="btn secondary-btn"
+                            data-en="Discover More"
+                            data-ar="اكتشف المزيد">
+                            Discover More
+                        </a>
+
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div>
+                            <h3>20+</h3>
+                            <span data-en="Coffee Choices"
+                                data-ar="نوع من القهوة">
+                                Coffee Choices
+                            </span>
+                        </div>
+
+                        <div>
+                            <h3>100%</h3>
+                            <span data-en="Fresh Quality"
+                                data-ar="جودة طازجة">
+                                Fresh Quality
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 hero-image">
+
+                    <div class="hero-image-wrapper">
+
+                        <img src="Images/hero.jpg"
+                            alt="Fresh coffee cup">
+
+                        <div class="hero-image-badge">
+                            <i class="fa-solid fa-star"></i>
+                            <span data-en="Made With Love"
+                                data-ar="صُنع بحب">
+                                Made With Love
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PROMOTIONAL POSTERS ================= -->
+
+    <section class="offers-section section-padding" id="offers">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-subtitle"
+                        data-en="SPECIAL OFFERS"
+                        data-ar="عروض مميزة">
+                        SPECIAL OFFERS
+                    </span>
+
+                    <h2 data-en="Offers You Will Love"
+                        data-ar="عروض هتعجبك">
+                        Offers You Will Love
+                    </h2>
+                </div>
+
+                <div class="slider-controls">
+
+                    <button class="slider-btn"
+                        data-bs-target="#offersCarousel"
+                        data-bs-slide="prev"
+                        aria-label="Previous offer">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+
+                    <button class="slider-btn"
+                        data-bs-target="#offersCarousel"
+                        data-bs-slide="next"
+                        aria-label="Next offer">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div id="offersCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+                data-bs-interval="4000">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+
+                        <div class="poster-card">
+                            <img src="Images/poster-1.jpg"
+                                alt="Coffee special offer">
+
+                            <div class="poster-overlay">
+
+                                <span data-en="SPECIAL OFFER"
+                                    data-ar="عرض خاص">
+                                    SPECIAL OFFER
+                                </span>
+
+                                <h3 data-en="Your Favorite Coffee"
+                                    data-ar="قهوتك المفضلة">
+                                    Your Favorite Coffee
+                                </h3>
+
+                                <p data-en="Enjoy a special coffee experience."
+                                    data-ar="استمتع بتجربة قهوة مميزة.">
+                                    Enjoy a special coffee experience.
+                                </p>
+
+                                <a href="#menu" class="poster-link"
+                                    data-en="Explore Menu"
+                                    data-ar="اكتشف المنيو">
+                                    Explore Menu
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="poster-card">
+                            <img src="Images/poster-2.jpg"
+                                alt="Cold drinks offer">
+
+                            <div class="poster-overlay">
+
+                                <span data-en="FRESH & COLD"
+                                    data-ar="انتعاش وبرودة">
+                                    FRESH & COLD
+                                </span>
+
+                                <h3 data-en="Refresh Your Day"
+                                    data-ar="انتعش في يومك">
+                                    Refresh Your Day
+                                </h3>
+
+                                <p data-en="Discover our delicious cold drinks."
+                                    data-ar="اكتشف مشروباتنا الباردة اللذيذة.">
+                                    Discover our delicious cold drinks.
+                                </p>
+
+                                <a href="#menu" class="poster-link"
+                                    data-en="Discover More"
+                                    data-ar="اكتشف المزيد">
+                                    Discover More
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="poster-card">
+                            <img src="Images/poster-3.jpg"
+                                alt="Dessert and coffee">
+
+                            <div class="poster-overlay">
+
+                                <span data-en="SWEET MOMENTS"
+                                    data-ar="لحظات حلوة">
+                                    SWEET MOMENTS
+                                </span>
+
+                                <h3 data-en="Coffee & Desserts"
+                                    data-ar="قهوة وحلويات">
+                                    Coffee & Desserts
+                                </h3>
+
+                                <p data-en="The perfect combination for your day."
+                                    data-ar="المزيج المثالي ليومك.">
+                                    The perfect combination for your day.
+                                </p>
+
+                                <a href="#menu" class="poster-link"
+                                    data-en="View Products"
+                                    data-ar="شاهد المنتجات">
+                                    View Products
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MENU SECTION ================= -->
+
+    <section class="menu-section section-padding" id="menu">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-subtitle"
+                        data-en="EXPLORE OUR MENU"
+                        data-ar="اكتشف المنيو">
+                        EXPLORE OUR MENU
+                    </span>
+
+                    <h2 data-en="Our Special Menu"
+                        data-ar="قائمتنا المميزة">
+                        Our Special Menu
+                    </h2>
+
+                    <p data-en="Choose your favorite drink and enjoy every sip."
+                        data-ar="اختر مشروبك المفضل واستمتع بكل رشفة.">
+                        Choose your favorite drink and enjoy every sip.
+                    </p>
+
+                </div>
+
+                <div class="menu-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search menu..."
+                        data-placeholder-en="Search menu..."
+                        data-placeholder-ar="ابحث في المنيو...">
+
+                </div>
+
+            </div>
+
+
+            <!-- Categories -->
+
+            <div class="category-list" id="categoryList">
+
+                <button class="category-btn active"
+                    data-category="All"
+                    data-en="All Items" data-ar="الكل">
+                    All Items
+                </button>
+
+                <button class="category-btn"
+                    data-category="Coffee"
+                    data-en="Coffee" data-ar="قهوة">
+                    Coffee
+                </button>
+
+                <button class="category-btn"
+                    data-category="Hot Drinks"
+                    data-en="Hot Drinks" data-ar="مشروبات ساخنة">
+                    Hot Drinks
+                </button>
+
+                <button class="category-btn"
+                    data-category="Cold Drinks"
+                    data-en="Cold Drinks" data-ar="مشروبات باردة">
+                    Cold Drinks
+                </button>
+
+                <button class="category-btn"
+                    data-category="Desserts"
+                    data-en="Desserts" data-ar="حلويات">
+                    Desserts
+                </button>
+
+            </div>
+
+
+            <!-- Products -->
+
+            <div class="row g-4" id="productsContainer">
+
+                <!-- JavaScript will create product cards here -->
+
+            </div>
+
+            <div class="text-center mt-5">
+
+                <p class="empty-message d-none" id="emptyMessage"
+                    data-en="No products found."
+                    data-ar="لم يتم العثور على منتجات.">
+                    No products found.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="about-section section-padding" id="about">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <div class="about-image">
+
+                        <img src="Images/cafe-interior.jpg"
+                            alt="Coffee shop interior">
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <span class="section-subtitle"
+                        data-en="ABOUT OUR CAFE"
+                        data-ar="عن الكافيه">
+                        ABOUT OUR CAFE
+                    </span>
+
+                    <h2 data-en="More Than Just Coffee"
+                        data-ar="أكثر من مجرد قهوة">
+                        More Than Just Coffee
+                    </h2>
+
+                    <p data-en="We create a comfortable place where every cup tells a story. Enjoy fresh coffee, delicious drinks and special moments with us."
+                        data-ar="نصنع مكانًا مريحًا تحكي فيه كل قهوة حكاية. استمتع بالقهوة الطازجة والمشروبات اللذيذة واللحظات المميزة معنا.">
+
+                        We create a comfortable place where every cup tells
+                        a story. Enjoy fresh coffee, delicious drinks and
+                        special moments with us.
+
+                    </p>
+
+                    <div class="about-features">
+
+                        <div>
+                            <i class="fa-solid fa-seedling"></i>
+                            <span data-en="Fresh Ingredients"
+                                data-ar="مكونات طازجة">
+                                Fresh Ingredients
+                            </span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-mug-hot"></i>
+                            <span data-en="Special Coffee"
+                                data-ar="قهوة مميزة">
+                                Special Coffee
+                            </span>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-heart"></i>
+                            <span data-en="Made With Passion"
+                                data-ar="صُنع بشغف">
+                                Made With Passion
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact-section section-padding" id="contact">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <div>
+
+                    <span class="section-subtitle"
+                        data-en="GET IN TOUCH"
+                        data-ar="تواصل معنا">
+                        GET IN TOUCH
+                    </span>
+
+                    <h2 data-en="We Are Here For You"
+                        data-ar="نحن هنا من أجلك">
+                        We Are Here For You
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="contact-card">
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <h5 data-en="Our Location"
+                            data-ar="موقعنا">
+                            Our Location
+                        </h5>
+
+                        <p data-en="Visit our coffee shop"
+                            data-ar="يسعدنا زيارتك للكافيه">
+                            Visit our coffee shop
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="contact-card">
+                        <i class="fa-solid fa-phone"></i>
+
+                        <h5 data-en="Phone Number"
+                            data-ar="رقم الهاتف">
+                            Phone Number
+                        </h5>
+
+                        <p dir="ltr">+20 100 000 0000</p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <h5 data-en="Email Address"
+                            data-ar="البريد الإلكتروني">
+                            Email Address
+                        </h5>
+
+                        <p>hello@brewhouse.com</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-5">
+
+                    <a href="#home" class="footer-brand">
+                        <i class="fa-solid fa-mug-hot"></i>
+                        Brew House
+                    </a>
+
+                    <p data-en="Every cup has a story. Make yours special."
+                        data-ar="كل كوب له حكاية، اجعل حكايتك مميزة.">
+                        Every cup has a story. Make yours special.
+                    </p>
+
+                    <div class="social-links">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <h5 data-en="Quick Links"
+                        data-ar="روابط سريعة">
+                        Quick Links
+                    </h5>
+
+                    <ul class="footer-links">
+
+                        <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+
+                        <li><a href="#offers" data-en="Offers" data-ar="العروض">Offers</a></li>
+
+                        <li><a href="#menu" data-en="Menu" data-ar="المنيو">Menu</a></li>
+
+                        <li><a href="#about" data-en="About" data-ar="عن الكافيه">About</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <h5 data-en="Opening Hours"
+                        data-ar="مواعيد العمل">
+                        Opening Hours
+                    </h5>
+
+                    <p data-en="Every Day: 9 AM - 12 AM"
+                        data-ar="يوميًا: 9 صباحًا - 12 منتصف الليل">
+                        Every Day: 9 AM - 12 AM
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 Brew House.
+                    <span data-en="All Rights Reserved."
+                        data-ar="جميع الحقوق محفوظة.">
+                        All Rights Reserved.
+                    </span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= SHOPPING CART MODAL ================= -->
+
+    <div class="modal fade" id="cartModal" tabindex="-1"
+        aria-labelledby="cartModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content cart-modal">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title" id="cartModalLabel"
+                        data-en="Your Shopping Cart"
+                        data-ar="سلة مشترياتك">
+                        Your Shopping Cart
+                    </h5>
+
+                    <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <div id="cartItems"></div>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <h5>
+                        <span data-en="Total:"
+                            data-ar="الإجمالي:">
+                            Total:
+                        </span>
+
+                        <span id="cartTotal">$0.00</span>
+                    </h5>
+
+                    <button class="btn main-btn" id="checkoutBtn"
+                        data-en="Place Order"
+                        data-ar="تأكيد الطلب">
+                        Place Order
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= BOOTSTRAP JS ================= -->
+
+    <script
+        src="Javascript/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- CUSTOM JS -->
+
+    <script src="Javascript/main.js"></script>
+
+</body>
+
+</html>
